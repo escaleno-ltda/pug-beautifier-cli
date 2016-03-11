@@ -1,4 +1,6 @@
-Pug(was Jade) Beautify CLI interface
+# Pug(was Jade) Beautify CLI tool.
+
+_Note :_ This program depends on [pug-beautify](https://github.com/vingorius/pug-beautify) module.
 
 ## Usage
 
