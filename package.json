@@ -1,0 +1,26 @@
+{
+  "name": "pug-beautifier",
+  "main": "pug-beautifier",
+  "version": "0.0.1",
+  "description": "Pug(Jade) Beautify CLI Interface",
+  "bin": {
+    "pug-beautifier": "./index.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "jade",
+    "pug",
+    "beautify",
+    "formatter"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "https://github.com/vingorius/pug-beautifier.git",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "pug-beautify": "^0.1.1"
+  },
+  "author": "Kim Jongho <vingorius@gmail.com>",
+  "license": "MIT"
+}
