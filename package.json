@@ -1,6 +1,6 @@
 {
   "name": "pug-beautifier-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pug(Jade) Beautify CLI Interface",
   "main": "pug-beautifier",
   "scripts": {
