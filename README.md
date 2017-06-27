@@ -5,7 +5,7 @@ _Note :_ This program depends on [pug-beautify](https://github.com/vingorius/pug
 ## Installation
 
 ```bash
-npm i -g pug-beautifier
+npm i -g pug-beautifier-cli
 ```
 
 ## Usage
