@@ -1,26 +1,61 @@
 {
-  "name": "pug-beautifier",
-  "main": "pug-beautifier",
+  "name": "pug-beautifier-cli",
   "version": "0.0.1",
   "description": "Pug(Jade) Beautify CLI Interface",
+  "main": "pug-beautifier",
+  "scripts": {
+    "pretest": "eslint . --fix",
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=4"
+  },
   "bin": {
     "pug-beautifier": "./index.js"
   },
   "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lgaticaq/pug-beautifier-cli.git"
+  },
   "keywords": [
     "jade",
     "pug",
     "beautify",
     "formatter"
   ],
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": "https://github.com/vingorius/pug-beautifier.git",
+  "author": "Leonardo Gatica <lgatica@protonmail.com> (https://about.me/lgatica)",
+  "license": "MIT",
   "dependencies": {
-    "commander": "^2.9.0",
+    "commander": "^2.10.0",
+    "globby": "^6.1.0",
+    "graceful-readlink": "^1.0.1",
     "pug-beautify": "^0.1.1"
   },
-  "author": "Kim Jongho <vingorius@gmail.com>",
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "prettier-standard": "^5.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "no-console": [
+        "error"
+      ]
+    }
+  }
 }

@@ -2,54 +2,43 @@
 
 _Note :_ This program depends on [pug-beautify](https://github.com/vingorius/pug-beautify) module.
 
+## Installation
+
+```bash
+npm i -g pug-beautifier
+```
+
 ## Usage
 
-```
-$ pug-beautifier [options] [file]
+```bash
+$ pug-beautifier [options] [file or glob]
 ```
 
-Beautify `<file>`. If no file is specified,
-input is taken from standard input and output to standard output.
+Beautify `<file>` and overwrite it:
 
 ### Options
 
-```
+```bash
 -h, --help                  output usage information
 -V, --version               output the version number
--s, --fillspace <tab_size>  fill <tab_size> spaces rather than tab, default tab.
--d, --omitdiv,              omit div tag, default not.
--o,--overwrite,             overwrite input file, default stdout.
+-t, --filltab <tab_size>  	fill <tab_size> tabs rather than space, default 2 spaces.
+-d, --keepdiv,              keep div tag, default not.
 ```
 
 ### Examples
 
-Beautify `foo.jade` to stdout:
+Beautify `foo.pug`:
 
-```
-$ pug-beautifier foo.jade
-```
-or
-```
-$ cat foo.jade | pug-beautifier
+```bash
+$ pug-beautifier foo.pug
 ```
 
-Beautify `foo.jade` and overwrite it:
+Beautify `foo.jade` with 4 tabs, keep 'div' tag :
 
+```bash
+$ pug-beautifier -d -t 4 foo.jade
 ```
-$ pug-beautifier -o foo.jade
-```
-
-Beautify `foo.jade` with 4 spaces, omit 'div' tag :
-
-```
-$ pug-beautifier -d -s 4 foo.jade
-```
-
-
-## Installation
-
-    npm install pug-beautifier -g
 
 ## License
 
-MIT
+[MIT](https://tldrlegal.com/license/mit-license)
